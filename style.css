@@ -273,3 +273,38 @@ button:focus-visible {
   font-size: 0.95rem;
   margin-bottom: 0;
 }
+/* ============================
+   Research Interests
+============================ */
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-1) var(--space-3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 68ch;
+}
+
+.interest-grid li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.98rem;
+}
+
+.interest-grid li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  background: var(--color-accent);
+  border-radius: 50%;
+}
+
+@media (max-width: 480px) {
+  .interest-grid {
+    grid-template-columns: 1fr;
+  }
+}
