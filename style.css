@@ -228,3 +228,48 @@ button:focus-visible {
 .section p {
   max-width: 68ch;
 }
+/* ============================
+   Education
+============================ */
+.edu-item {
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.edu-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+.edu-header h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.edu-date {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-ink-soft);
+  white-space: nowrap;
+}
+
+.edu-degree {
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.edu-detail {
+  color: var(--color-ink-soft);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
